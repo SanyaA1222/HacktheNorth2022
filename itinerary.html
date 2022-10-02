@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Tripmyway</title>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand mb-0 h1" href="#">
+            <img src="/static/favicon.ico" alt="">
+            TripMyWay</a>
+    </nav>
+
+
+
+      </div>
+    <div class="wrapper2">
+        <h1>My Trip  to {{ destination }}</h1>
+    </div>
+
+
+        {% for i in range(days|int) %}
+            <div class="wrapper2">
+                <div class="card">
+                    <h2 class="card-title" style="text-align:center;">{{ i + 9 }}:00</h2>
+                </div>
+            </div>
+            <div class="wrapper2">
+                    <div class="card">
+                        <div>
+                            <img class="card-img-top" src="https://www.theactivetimes.com/sites/default/files/2019/02/04/copy/camara-de-lobos-madeira-picture-id467497162.jpg" alt="Card image cap">
+                        </div>
+
+                        <div>
+                            <h5 class="card-title">{{attractions[i]['name']}}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Categories: {{ attractions[i]['kinds'] }}</h6>
+                            <p class="card-text">Rating: {{ attractions[i]['rate'] }}</p>
+                            <p class="card-text">Details: ....</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+
+
+
+
+    <div class="wrapper2">
+        <div class="card">
+                <h2 class="card-title" style="text-align:center;">End of the Trip</h2>
+        </div>
+    </div>
+      
+
+</body>
+</html>

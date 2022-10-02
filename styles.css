@@ -1,0 +1,107 @@
+/* Bootstrap css */
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+
+/* Google Material icons */
+@import "http://fonts.googleapis.com/icon?family=Material+Icons";
+
+/* Propeller css */
+@import "dist/css/propeller.min.css";
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #CBF3F0;
+}
+
+.wrapper{
+    padding: 40px;
+    height: 850px;
+    width: 700px;
+    background-color: #f8f9fa!important;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.preferences {
+    display: flex;
+    flex-direction: column;
+    margin-left: 22px;
+}
+
+.navbar.navbar-light.bg-light{
+    background-color: #CBF3F0!important;
+}
+.card{
+    background-color: #beb6a7;
+    border-radius: 0.25cm;
+    border-color: transparent;
+    padding-left: 0.25cm;
+    padding-right: 0.25cm;
+    padding-top: 0.25cm;
+    padding-bottom:0.25cm;
+    border-spacing: 1cm;
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.card-img-top{
+    width: 340px;
+    height: 200px;
+    border-radius: 0.25cm;
+}
+
+.card-title{
+    padding: 10px;
+}
+
+.card-subtitle.mb-2.text-muted{
+    padding:10px;
+    color: #EFF2C0;
+}
+
+.card-text{
+    padding:10px;
+}
+
+.dayButton{
+    background-color: black;
+    color: white;
+    border-radius: 0.25cm;
+    padding: 0.25cm;
+    display: inline-flex;
+    width: 24%;
+}
+
+.btn-group{
+    width: 100%;
+    background-color: #CBF3F0;
+    padding: 1cm;
+}
+
+.btn.btn-secondary{
+    color: black;
+    background-color: #beb6a7;
+    border-color: black;
+    border-width: 0px;
+    height: 60px;
+}
+
+.btn.btn-secondary:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+
+.wrapper2{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #CBF3F0;
+    width: 100%;
+}
